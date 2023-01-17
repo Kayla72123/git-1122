@@ -1,0 +1,13 @@
+# Python-specific Directories
+__pycache__
+*.egg-info
+
+# Virtual Environment
+venv
+
+# Text Editor Configs
+.vscode
+.idea
+
+# OS Specific Files
+.DS_Store
