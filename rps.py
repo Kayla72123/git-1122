@@ -29,6 +29,21 @@ def get_input() -> str:
 def game() -> None:
     pass
 
+    while True:
+        user_choice = get_input()
+
+        if user_choice == "q":
+            break
+
+        if user_choice not in objects:
+            print("Incorrect input. Try again")
+            continue
+
+        computer_choice = choice(objects)
+
+        print(f"You chose {user_choice}")
+        print(f"Computer chose {computer_choice}")
+
 
 def main() -> None:
     pass
