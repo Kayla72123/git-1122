@@ -44,6 +44,23 @@ def game() -> None:
         print(f"You chose {user_choice}")
         print(f"Computer chose {computer_choice}")
 
+        if user_choice == computer_choice:
+            print("Draw.")
+        elif user_choice == "rock" and computer_choice == "scissors":
+            user_won()
+            print("You won")
+        elif user_choice == "paper" and computer_choice == "rock":
+            user_won()
+            print("You won")
+        elif user_choice == "scissors" and computer_choice == "paper":
+            user_won()
+            print("You won")
+        else:
+            computer_won()
+            print("Computer won")
+
+        print(f"Score is {user_score}-{computer_score}")
+
 
 def main() -> None:
     pass
