@@ -63,7 +63,7 @@ def game() -> None:
 
 
 def main() -> None:
-    pass
+    game()
 
 
 if __name__ == "__main__":
