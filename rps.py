@@ -15,6 +15,7 @@ def user_won():
 
 def computer_won():
     global computer_score
+    # TODO Exercise 2: Your code here
     computer_score += 0
 
 
@@ -33,6 +34,7 @@ def game() -> None:
         user_choice = get_input()
 
         if user_choice == "q":
+            # TODO Exercise 3: Your code here
             break
 
         if user_choice not in objects:
