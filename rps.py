@@ -20,7 +20,7 @@ def computer_won():
 
 
 def get_input() -> str:
-    user_input = input('Please enter ROCK, PAPER, SCISSORS; Q to quit: ')
+    user_input = input('Please enter ROCK, PAPER, or SCISSORS; Q to quit: ')
 
     user_choice = user_input.strip().lower()
 
