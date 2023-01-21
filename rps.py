@@ -20,7 +20,7 @@ def computer_won():
 
 
 def get_input() -> str:
-    user_input = input('Please enter your choice or "Q" or "q" to quit: ')
+    user_input = input('Please enter ROCK, PAPER, SCISSORS; Q to quit: ')
 
     user_choice = user_input.strip().lower()
 
@@ -28,8 +28,6 @@ def get_input() -> str:
 
 
 def game() -> None:
-    pass
-
     while True:
         user_choice = get_input()
 
@@ -47,7 +45,7 @@ def game() -> None:
         print(f"Computer chose {computer_choice}")
 
         if user_choice == computer_choice:
-            print("Draw.")
+            print("Tie")
         elif user_choice == "rock" and computer_choice == "scissors":
             user_won()
             print("You won")
